@@ -1,0 +1,27 @@
+{
+  "id": "did:web:novacoder-zrk.github.io:did:1",
+  "verificationMethod": [
+    {
+      "type": "Bls12381G2Key2020",
+      "id": "did:web:novacoder-zrk.github.io:did:1#keys-1",
+      "controller": "did:web:novacoder-zrk.github.io:did:1",
+      "publicKeyBase58": "22n7VCZ2rAmTu2sULVgQTWpLYjGLciyXdXyaFqZefonAJDLqX5R8Q3xQK62XWhnbwraz9URpFNuA3QGsnyj51tE78yFwBKWknJgxLF5w8hmb3YVyueMPUMyw1Lb3HFZjrK55"
+    }
+  ],
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/bls12381-2020/v1"
+  ],
+  "authentication": [
+    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+  ],
+  "assertionMethod": [
+    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+  ],
+  "capabilityInvocation": [
+    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+  ],
+  "capabilityDelegation": [
+    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+  ]
+}
