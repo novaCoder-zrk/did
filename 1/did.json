@@ -6,6 +6,12 @@
       "id": "did:web:novacoder-zrk.github.io:did:1#keys-1",
       "controller": "did:web:novacoder-zrk.github.io:did:1",
       "publicKeyBase58": "22n7VCZ2rAmTu2sULVgQTWpLYjGLciyXdXyaFqZefonAJDLqX5R8Q3xQK62XWhnbwraz9URpFNuA3QGsnyj51tE78yFwBKWknJgxLF5w8hmb3YVyueMPUMyw1Lb3HFZjrK55"
+    },
+    {
+      "type": "chainmaker",
+      "id": "did:web:novacoder-zrk.github.io:did:1#keys-2",
+      "controller": "did:web:novacoder-zrk.github.io:did:1",
+      "chainAddress": "asadasdadsadadadada"
     }
   ],
   "@context": [
@@ -13,15 +19,19 @@
     "https://w3id.org/security/suites/bls12381-2020/v1"
   ],
   "authentication": [
-    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+    "did:web:novacoder-zrk.github.io:did:1#keys-1",
+    "did:web:novacoder-zrk.github.io:did:1#keys-2"
   ],
   "assertionMethod": [
-    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+    "did:web:novacoder-zrk.github.io:did:1#keys-1",
+    "did:web:novacoder-zrk.github.io:did:1#keys-2"
   ],
   "capabilityInvocation": [
-    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+    "did:web:novacoder-zrk.github.io:did:1#keys-1",
+    "did:web:novacoder-zrk.github.io:did:1#keys-2"
   ],
   "capabilityDelegation": [
-    "did:web:novacoder-zrk.github.io:did:1#keys-1"
+    "did:web:novacoder-zrk.github.io:did:1#keys-1",
+    "did:web:novacoder-zrk.github.io:did:1#keys-2"
   ]
 }
