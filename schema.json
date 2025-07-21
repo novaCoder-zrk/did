@@ -1,103 +1,57 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "SimpleCredentialSubject",
-    "type": "object",
-    "properties": {
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "ChainmakerCredential": {
+      "@id": "https://example.com/terms#ChainmakerCredential",
+      "@type": "@id",
+      "@context": {
+        "@protected": true,
         "type": {
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1
+          "@id": "https://example.com/terms#type",
+          "@type": "@id",
+          "@container": "@set"
         },
         "chainmaker": {
-            "type": "object",
-            "properties": {
-                "attachements": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "accessPoint": {
-                                "type": "string"
-                            },
-                            "fileHash": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "accessPoint",
-                            "fileHash"
-                        ]
-                    }
-                },
-                "content": {
-                    "type": "object",
-                    "properties": {
-                        "currency": {
-                            "type": "string"
-                        },
-                        "taxCode": {
-                            "type": "string"
-                        },
-                        "value": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "currency",
-                        "taxCode",
-                        "value"
-                    ]
-                },
-                "holder": {
-                    "type": "object",
-                    "properties": {
-                        "did": {
-                            "type": "string"
-                        },
-                        "name": {
-                            "type": "string"
-                        }
-                    },
-                    "required": [
-                        "did",
-                        "name"
-                    ]
-                },
-                "issuers": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "contractAddr": {
-                                "type": "string"
-                            },
-                            "did": {
-                                "type": "string"
-                            },
-                            "name": {
-                                "type": "string"
-                            }
-                        },
-                        "required": [
-                            "contractAddr",
-                            "did",
-                            "name"
-                        ]
-                    }
-                }
+          "@id": "https://example.com/terms#chainmaker",
+          "@type": "@json",
+          "@context": {
+            "@protected": true,
+            "chainId": {
+              "@id": "https://example.com/terms#chainId"
             },
-            "required": [
-                "attachements",
-                "content",
-                "holder",
-                "issuers"
-            ]
+            "orgId": {
+              "@id": "https://example.com/terms#orgId"
+            },
+            "contractName": {
+              "@id": "https://example.com/terms#contractName"
+            },
+            "contractMethod": {
+              "@id": "https://example.com/terms#contractMethod"
+            },
+            "txId": {
+              "@id": "https://example.com/terms#txId"
+            },
+            "blockHeight": {
+              "@id": "https://example.com/terms#blockHeight",
+              "@type": "xsd:integer"
+            },
+            "timestamp": {
+              "@id": "https://example.com/terms#timestamp",
+              "@type": "xsd:dateTime"
+            },
+            "result": {
+              "@id": "https://example.com/terms#result"
+            },
+            "payload": {
+              "@id": "https://example.com/terms#payload"
+            },
+            "signature": {
+              "@id": "https://example.com/terms#signature"
+            }
+          }
         }
-    },
-    "required": [
-        "type",
-        "chainmaker"
-    ]
+      }
+    }
+  }
 }
