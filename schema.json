@@ -4,54 +4,16 @@
     "@protected": true,
     "ChainmakerCredential": {
       "@id": "https://example.com/terms#ChainmakerCredential",
+      "@type": "@id"
+    },
+    "type": {
+      "@id": "https://example.com/terms#type",
       "@type": "@id",
-      "@context": {
-        "@protected": true,
-        "type": {
-          "@id": "https://example.com/terms#type",
-          "@type": "@id",
-          "@container": "@set"
-        },
-        "chainmaker": {
-          "@id": "https://example.com/terms#chainmaker",
-          "@type": "@json",
-          "@context": {
-            "@protected": true,
-            "chainId": {
-              "@id": "https://example.com/terms#chainId"
-            },
-            "orgId": {
-              "@id": "https://example.com/terms#orgId"
-            },
-            "contractName": {
-              "@id": "https://example.com/terms#contractName"
-            },
-            "contractMethod": {
-              "@id": "https://example.com/terms#contractMethod"
-            },
-            "txId": {
-              "@id": "https://example.com/terms#txId"
-            },
-            "blockHeight": {
-              "@id": "https://example.com/terms#blockHeight",
-              "@type": "xsd:integer"
-            },
-            "timestamp": {
-              "@id": "https://example.com/terms#timestamp",
-              "@type": "xsd:dateTime"
-            },
-            "result": {
-              "@id": "https://example.com/terms#result"
-            },
-            "payload": {
-              "@id": "https://example.com/terms#payload"
-            },
-            "signature": {
-              "@id": "https://example.com/terms#signature"
-            }
-          }
-        }
-      }
+      "@container": "@set"
+    },
+    "chainmaker": {
+      "@id": "https://example.com/terms#chainmaker",
+      "@type": "@json"
     }
   }
 }
