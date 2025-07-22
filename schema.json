@@ -5,15 +5,6 @@
     "ChainmakerCredential": {
       "@id": "https://example.com/terms#ChainmakerCredential",
       "@type": "@id"
-    },
-    "type": {
-      "@id": "https://example.com/terms#type",
-      "@type": "@id",
-      "@container": "@set"
-    },
-    "chainmaker": {
-      "@id": "https://example.com/terms#chainmaker",
-      "@type": "@json"
     }
   }
 }
