@@ -4,7 +4,29 @@
     "@protected": true,
     "ChainmakerCredential": {
       "@id": "https://example.com/terms#ChainmakerCredential",
-      "@type": "@id"
+      "@type": "@id",
+      "@context": {
+        "@protected": true,
+        "chainmaker": {
+          "@id": "https://example.com/terms#chainmaker"
+        },
+        "holder": {
+          "@id": "https://example.com/terms#holder"
+        },
+        "issuers": {
+          "@id": "https://example.com/terms#issuers",
+          "@container": "@set"
+        },
+        "did": {
+          "@id": "https://example.com/terms#did"
+        },
+        "name": {
+          "@id": "https://example.com/terms#name"
+        },
+        "contractAddr": {
+          "@id": "https://example.com/terms#contractAddr"
+        }
+      }
     }
   }
 }
