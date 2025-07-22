@@ -5,6 +5,19 @@
     "ChainmakerCredential": {
       "@id": "https://example.com/terms#ChainmakerCredential",
       "@type": "@id"
+    },
+    "chainmaker": {
+      "@id": "https://example.com/terms#chainmaker",
+      "@context": {
+        "@protected": true,
+        "holder": {
+          "@id": "https://example.com/terms#holder"
+        },
+        "issuers": {
+          "@id": "https://example.com/terms#issuers",
+          "@container": "@set"
+        }
+      }
     }
   }
 }
