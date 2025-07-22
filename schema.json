@@ -4,8 +4,9 @@
     "@protected": true,
     "ChainmakerCredential": {
       "@id": "https://example.com/terms#ChainmakerCredential",
-      "@type": "@id",
-      "chainmaker": {
+      "@type": "@id"
+    },
+    "chainmaker": {
       "@id": "https://example.com/terms#chainmaker",
       "@context": {
         "@protected": true,
@@ -38,7 +39,6 @@
           }
         }
       }
-    }
     }
   }
 }
