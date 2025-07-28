@@ -89,6 +89,9 @@
               "signatureValue": {
                 "type": "string"
               },
+              "proofPurpose":{
+                "type": "string"
+              },
               "proofValue": {
                 "type": "string"
               }
@@ -98,7 +101,8 @@
               "signatureType",
               "created",
               "proofValue",
-              "verificationMethod"
+              "verificationMethod",
+              "proofPurpose"
             ],
             "additionalProperties": false
           },
@@ -118,13 +122,21 @@
               },
               "proofValue": {
                 "type": "string"
-              }
+              },
+              "publicKeyPem":{
+                "type": "string"
+              },
+              "proofPurpose":{
+                "type": "string"
+              },
             },
             "required": [
               "verificationType",
               "signatureType",
               "created",
-              "proofValue"
+              "proofValue",
+              "proofPurpose",
+              "publicKeyPem"
             ],
             "additionalProperties": false
           }
@@ -132,6 +144,6 @@
       }
     }
   },
-  "required": ["credentialSubject", "issuer"],
+  "required": ["credentialSubject", "issuer", "targetHash", "proof"],
   "additionalProperties": false
 }
