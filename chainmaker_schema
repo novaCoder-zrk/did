@@ -128,7 +128,7 @@
               },
               "proofPurpose":{
                 "type": "string"
-              },
+              }
             },
             "required": [
               "verificationType",
