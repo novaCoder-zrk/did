@@ -60,6 +60,9 @@
                 "accessPoints"
             ]
         },
+        "id":{
+            "type": "string"
+        },
         "proof": {
             "type": "object",
             "properties": {
