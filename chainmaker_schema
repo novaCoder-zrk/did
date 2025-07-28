@@ -1,0 +1,141 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string",
+            "enum": [
+                "TransferableRecords",
+                "CrossChainTransferableRecords"
+            ]
+        },
+        "credentialSubject": {
+            "type": "object",
+            "additionalProperties": true
+        },
+        "issuer": {
+            "type": "string"
+        },
+        "issuanceDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "expirationDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "registryStatus": {
+            "type": "object",
+            "properties": {
+                "chain": {
+                    "type": "string"
+                },
+                "chainId": {
+                    "type": "string"
+                },
+                "contractAddr": {
+                    "type": "string"
+                }
+            }
+        },
+        "attachements": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "fileHash": {
+                        "type": "string"
+                    },
+                    "accessPoints": {
+                        "type": "string"
+                    }
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "fileHash",
+                "accessPoints"
+            ]
+        },
+        "proof": {
+            "type": "object",
+            "properties": {
+                "targetHash": {
+                    "type": "string"
+                },
+                "signature": {
+                    "oneOf": [
+                        {
+                            "type": "object",
+                            "properties": {
+                                "verificationType": {
+                                    "type": "string",
+                                    "enum": [
+                                        "DID"
+                                    ]
+                                },
+                                "signatureType": {
+                                    "type": "string"
+                                },
+                                "created": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "verificationMethod": {
+                                    "type": "string"
+                                },
+                                "signatureValue": {
+                                    "type": "string"
+                                },
+                                "proofValue": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "verificationType",
+                                "signatureType",
+                                "created",
+                                "proofValue",
+                                "verificationMethod"
+                            ],
+                            "additionalProperties": false
+                        },
+                        {
+                            "type": "object",
+                            "properties": {
+                                "verificationType": {
+                                    "type": "string",
+                                    "enum": [
+                                        "PublicKey"
+                                    ]
+                                },
+                                "signatureType": {
+                                    "type": "string"
+                                },
+                                "created": {
+                                    "type": "string",
+                                    "format": "date-time"
+                                },
+                                "proofValue": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "verificationType",
+                                "signatureType",
+                                "created",
+                                "proofValue"
+                            ],
+                            "additionalProperties": false
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "credentialSubject",
+        "issuer"
+    ]
+}
