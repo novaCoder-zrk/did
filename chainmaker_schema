@@ -144,6 +144,6 @@
       }
     }
   },
-  "required": ["credentialSubject", "issuer", "targetHash"],
+  "required": ["credentialSubject", "issuer"],
   "additionalProperties": false
 }
