@@ -74,9 +74,9 @@
             "properties": {
               "verificationType": {
                 "type": "string",
-                "enum": ["DID"]
+                "enum": ["did:cndid"]
               },
-              "signatureType": {
+              "type": {
                 "type": "string"
               },
               "created": {
@@ -98,7 +98,7 @@
             },
             "required": [
               "verificationType",
-              "signatureType",
+              "type",
               "created",
               "proofValue",
               "verificationMethod",
@@ -113,7 +113,7 @@
                 "type": "string",
                 "enum": ["PublicKey"]
               },
-              "signatureType": {
+              "type": {
                 "type": "string"
               },
               "created": {
@@ -132,7 +132,7 @@
             },
             "required": [
               "verificationType",
-              "signatureType",
+              "type",
               "created",
               "proofValue",
               "proofPurpose",
@@ -144,6 +144,6 @@
       }
     }
   },
-  "required": ["credentialSubject", "issuer"],
+  "required": ["credentialSubject", "issuer", "targetHash", "proof"],
   "additionalProperties": false
 }
