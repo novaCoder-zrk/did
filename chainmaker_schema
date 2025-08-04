@@ -139,6 +139,36 @@
               "publicKeyPem"
             ],
             "additionalProperties": false
+          },
+          {
+            "type": "object",
+            "properties": {
+              "verificationType": {
+                "type": "string",
+                "enum": ["ETH"]
+              },
+              "signatureType": {
+                "type": "string"
+              },
+              "created": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "proofValue": {
+                "type": "string"
+              },
+              "proofPurpose":{
+                "type": "string"
+              }
+            },
+            "required": [
+              "verificationType",
+              "signatureType",
+              "created",
+              "proofValue",
+              "proofPurpose"
+            ],
+            "additionalProperties": false
           }
         ]
       }
