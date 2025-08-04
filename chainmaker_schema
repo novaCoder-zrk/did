@@ -76,7 +76,7 @@
                 "type": "string",
                 "enum": ["did:cndid"]
               },
-              "type": {
+              "signatureType": {
                 "type": "string"
               },
               "created": {
@@ -98,7 +98,7 @@
             },
             "required": [
               "verificationType",
-              "type",
+              "signatureType",
               "created",
               "proofValue",
               "verificationMethod",
@@ -113,7 +113,7 @@
                 "type": "string",
                 "enum": ["PublicKey"]
               },
-              "type": {
+              "signatureType": {
                 "type": "string"
               },
               "created": {
@@ -132,7 +132,7 @@
             },
             "required": [
               "verificationType",
-              "type",
+              "signatureType",
               "created",
               "proofValue",
               "proofPurpose",
