@@ -7,11 +7,11 @@
       "controller": "did:web:novacoder-zrk.github.io:did:1",
       "publicKeyBase58": "22n7VCZ2rAmTu2sULVgQTWpLYjGLciyXdXyaFqZefonAJDLqX5R8Q3xQK62XWhnbwraz9URpFNuA3QGsnyj51tE78yFwBKWknJgxLF5w8hmb3YVyueMPUMyw1Lb3HFZjrK55"
     },
-    {
-      "type": "chainmaker",
+   {
       "id": "did:web:novacoder-zrk.github.io:did:1#keys-2",
       "controller": "did:web:novacoder-zrk.github.io:did:1",
-      "chainAddress": "asdadsasdadasdsdsdssssssss"
+      "type": "did:cndid",
+      "verificationMethod": "did:cndid:2bb1f004e0524cfcb1be570b9f4d1272#key-1"
     }
   ],
   "@context": [
