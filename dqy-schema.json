@@ -28,7 +28,25 @@
               }
             },
             "credentialSubject": {
-              "@id": "https://example.com/terms#credentialSubject"
+              "@id": "https://example.com/terms#credentialSubject",
+              "@context": {
+                "@protected": false,
+                "blNumber": {
+                  "@id": "https://example.com/terms#blNumber"
+                },
+                "consigneeName": {
+                  "@id": "https://example.com/terms#consigneeName"
+                },
+                "notifyPartyName": {
+                  "@id": "https://example.com/terms#notifyPartyName"
+                },
+                "scac": {
+                  "@id": "https://example.com/terms#scac"
+                },
+                "shipperAddressStreet": {
+                  "@id": "https://example.com/terms#shipperAddressStreet"
+                }
+              }
             },
             "expirationDate": {
               "@id": "https://example.com/terms#expirationDate",
