@@ -28,7 +28,7 @@
               }
             },
             "credentialSubject": {
-              "@id": "https://example.com/terms#credentialSubject",
+              "@id": "https://example.com/terms#credentialSubject"
             },
             "expirationDate": {
               "@id": "https://example.com/terms#expirationDate",
@@ -58,6 +58,9 @@
                 },
                 "proofValue": {
                   "@id": "https://example.com/terms#proofValue"
+                },
+                "publicKeyPem": {
+                  "@id": "https://example.com/terms#publicKeyPem"
                 },
                 "signatureType": {
                   "@id": "https://example.com/terms#signatureType"
