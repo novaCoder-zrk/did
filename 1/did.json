@@ -7,11 +7,12 @@
       "controller": "did:web:novacoder-zrk.github.io:did:1",
       "publicKeyBase58": "22n7VCZ2rAmTu2sULVgQTWpLYjGLciyXdXyaFqZefonAJDLqX5R8Q3xQK62XWhnbwraz9URpFNuA3QGsnyj51tE78yFwBKWknJgxLF5w8hmb3YVyueMPUMyw1Lb3HFZjrK55"
     },
-   {
+    {
       "id": "did:web:novacoder-zrk.github.io:did:1#keys-2",
-      "controller": "did:web:novacoder-zrk.github.io:did:1",
-      "type": "did:cndid",
-      "verificationMethod": "did:cndid:2bb1f004e0524cfcb1be570b9f4d1272#key-1"
+      "address": "56188fd47f0abd97acfba939b205b4702c5ead81",
+      "controller": "did:cndid:2bb1f004e0524cfcb1be570b9f4d1272",
+      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoEcz1UBgi0DQgAE5i5QsZG/3VHaB/RzyRFmAF7+3idz\nvIxn+B/M8YyIeAkUdOsDGv+eO/Q7tZXPsvubl93tzoZ9otu9eIzN8PxwhQ==\n-----END PUBLIC KEY-----\n",
+      "type": "SM2Signature"
     }
   ],
   "@context": [
